@@ -9,12 +9,12 @@
 
         <title>APBnPSC in Metaverse</title>
         <script>
-            alert("This project is under construction yet!Production build is coming soon...")
+            alert("Caution: The performance of this application may be varied due to internet speed and your device. Please keep your patience!")
         </script>
     </head>
     <body style="user-select: none; -webkit-app-region:drag;">
 
-        <a-scene loading-screen="dotsColor: blue; backgroundColor:skyblue" vr-mode-ui="enabled:false" physics="debug: false">
+        <a-scene loading-screen="dotsColor: blue; backgroundColor:skyblue" vr-mode-ui="enabled:true" physics="debug: false">
             <!-- assets -->
             <a-assets>
                 <img id="concrete_texture" src="textures/concrete_texture.jpg">
@@ -22,8 +22,9 @@
                 <img id="sky_texture" src="textures/clear_sky.jpeg">
                 <img id="grass_texture" src="textures/grass(1).jpg">
                 <img id="brick" src="textures/brick_texture.jpg">
-                <a-asset-item id="model" src="models/college13.glb"></a-asset-item>
-                <a-asset-item id="mesh" src="models/mesh3.glb"></a-asset-item>
+                <img id="advertisement" src="advertisement.png">
+                <a-asset-item id="model" src="models/college17.glb"></a-asset-item>
+                <a-asset-item id="mesh" src="models/mesh4.glb"></a-asset-item>
             </a-assets>
 
             <a-entity environment="preset: forest;fog:0.0;dressing:none;ground:flat;shadow:true;lighting:none" scale="1 1 1"></a-entity>
@@ -50,7 +51,8 @@
                     <!-- collisionEntities: [mesh] -->
                     </a-entity>
                 </a-entity>
-            </a-entity>    
+            </a-entity>
+            <a-image src="#advertisement" width="1.5" height="2" position="4 1 17.5" rotation="-12 -90 0"></a-image> 
             <a-entity light="type: ambient; color: #CCC"></a-entity>
             <a-entity light="type: directional; color: #EEE; intensity: 0.3" position="15.92 16.48 0"></a-entity>
             <!-- <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="15.92 16.48 0"></a-entity> -->
