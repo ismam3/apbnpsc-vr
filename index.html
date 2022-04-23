@@ -7,6 +7,13 @@
         <!-- <script src="aframe-extras.min.js"></script> -->
         <!-- <script src="aframe-physics-system.min.js"></script> -->
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#87CEEB">
+
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="logo/192.png">
+
         <title>APBnPSC in Metaverse</title>
         <script>
             alert("Caution: The performance of this application may be varied due to internet speed and your device. Please keep your patience!")
@@ -17,11 +24,6 @@
         <a-scene loading-screen="dotsColor: blue; backgroundColor:skyblue" vr-mode-ui="enabled:true" physics="debug: false">
             <!-- assets -->
             <a-assets>
-                <img id="concrete_texture" src="textures/concrete_texture.jpg">
-                <img id="white_marbel" src="textures/white_marbel_tiles.jpg">
-                <img id="sky_texture" src="textures/clear_sky.jpeg">
-                <img id="grass_texture" src="textures/grass(1).jpg">
-                <img id="brick" src="textures/brick_texture.jpg">
                 <img id="advertisement" src="advertisement.png">
                 <a-asset-item id="model" src="models/college24.glb"></a-asset-item>
                 <a-asset-item id="mesh" src="models/mesh8.glb"></a-asset-item>
@@ -117,5 +119,6 @@
                 });
 
         </script>
+        <script src="script.js"></script>
     </body>
 </html>
