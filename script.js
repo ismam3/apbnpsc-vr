@@ -7,3 +7,10 @@ if("serviceWorker" in navigator){
         console.log(error);
     })
 }
+
+document.querySelector('a-scene').addEventListener('enter-vr', function () {
+    document.querySelector("#cameraRig").setAttribute("position","0 0 0")
+ });
+document.querySelector('a-scene').addEventListener('exit-vr', function () {
+    document.querySelector("#cameraRig").setAttribute("position","0 1.6 0")
+ });

@@ -1,8 +1,8 @@
 <html>
     <head>
-        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="aframe_environment.min.js"></script>
-        <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>  
+        <script src="a-frame/1-2-0.min.js"></script>
+        <script src="a-frame/aframe_environment.min.js"></script>
+        <script src="a-frame/teleport-control.min.js"></script>  
  
         <!-- <script src="aframe-extras.min.js"></script> -->
         <!-- <script src="aframe-physics-system.min.js"></script> -->
@@ -31,14 +31,14 @@
 
             <a-entity environment="preset: forest;fog:0.0;dressing:none;ground:flat;shadow:true;lighting:none" scale="1 1 1"></a-entity>
 
-            <a-entity id="model" rotation="0 -90 0" position="0 0.2 0" gltf-model="#model" scale="0.5 0.5 0.5"> 
+            <a-entity id="model" rotation="0 -90 0" position="0 0.22 0" gltf-model="#model" scale="1.2 1.2 1.2"> 
             </a-entity>
-            <a-entity mesh id="mesh_model" rotation="0 -90 0" position="0 0.2 0" gltf-model="#mesh" scale="0.5 0.5 0.5">
+            <a-entity mesh id="mesh_model" rotation="0 -90 0" position="0 0.22 0" gltf-model="#mesh" scale="1.6 1.6 1.6">
             </a-entity>
 
 
-            <a-entity id="cameraRig" position="0 0.5 0" >
-                <a-entity id="camera" camera look-controls="pointerLockEnabled:true">
+            <a-entity id="cameraRig" position="0 1.6 0">
+                <a-entity id="head" camera look-controls="pointerLockEnabled:true">
                     <a-entity position="0.1 -0.1 0"
                         touch-listener
                         teleport-controls=
@@ -55,7 +55,8 @@
                     <a-cursor></a-cursor>
                 </a-entity>
             </a-entity>
-            <a-image src="#advertisement" width="1.5" height="2" position="4 1 17.5" rotation="-12 -90 0"></a-image>
+            <a-plane width="1" position="0 1.6 0" material="red" rotation="90 0 0"></a-plane>
+            <!-- <a-image src="#advertisement" width="1.5" height="2" position="4 1 17.5" rotation="-12 -90 0"></a-image>
             <a-image src="#advertisement" width="1.5" height="2" position="-6.6 1 18.1" rotation="-12 0 0"></a-image>
             <a-image src="#advertisement" width="0.75" height="1" position="3.015 6.012 -20" rotation="12 180 0"></a-image>
             <a-image src="#advertisement" width="0.75" height="1" position="-4.682 6.293 -20.733" rotation="-12 90 0"></a-image>
@@ -71,7 +72,7 @@
 
             <a-image src="#advertisement" width="0.5" height="0.5" position="8.985 3.6 -0.27" rotation="0 270 0"></a-image>
             <a-image src="#advertisement" width="0.5" height="0.5" position="8.985 2.6 -0.27" rotation="0 270 0"></a-image>
-            <a-image src="#advertisement" width="0.5" height="0.5" position="8.985 1.6 -0.27" rotation="0 270 0"></a-image>
+            <a-image src="#advertisement" width="0.5" height="0.5" position="8.985 1.6 -0.27" rotation="0 270 0"></a-image> -->
 
             <a-entity light="type: ambient; color: #CCC"></a-entity>
             <a-entity light="type: directional; color: #EEE; intensity: 0.3" position="15.92 16.48 0"></a-entity>
