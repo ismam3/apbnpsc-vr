@@ -1,4 +1,4 @@
-const cache_name = "cache_v1.0.1"
+const cache_name = "cache_v1.0.2"
 
 self.addEventListener("install",e=>{
     self.skipWaiting();

@@ -9,8 +9,10 @@ if("serviceWorker" in navigator){
 }
 
 document.querySelector('a-scene').addEventListener('enter-vr', function () {
-    document.querySelector("#cameraRig").setAttribute("position","0 0.3 0")
+    document.querySelector("#cameraRig").setAttribute("position","0 0.3 0");
+    document.querySelector("#controller").setAttribute("teleport-controls","cameraRig: #cameraRig;teleportOrigin: #head;startEvents:starttouch;endEvents:endtouch;curveShootingSpeed:10;hitCylinderRadius:0.1;collisionEntities: [mesh]")
  });
 document.querySelector('a-scene').addEventListener('exit-vr', function () {
-    document.querySelector("#cameraRig").setAttribute("position","0 1.6 0")
+    document.querySelector("#cameraRig").setAttribute("position","0 1.6 0");
+    document.querySelector("#controller").setAttribute("teleport-controls","cameraRig: #cameraRig;teleportOrigin: #head;startEvents:starttouch;endEvents:endtouch;curveShootingSpeed:5;hitCylinderRadius:0.1;collisionEntities: [mesh]")
  });
